@@ -5,7 +5,7 @@
 - Matías Mora Posada
 - Salomé Naomi García Tabares
 
-**Class:** Lenguajes Formales (Clase 4369) - 11
+**Class:** 4369 - SI2002 Formal Languages
 
 ## Project description
 
@@ -19,6 +19,7 @@ The implementation explores only reachable subsets. It also includes an optional
 - Programming language: Python 3.12.14
 - Required Python packages: none; the program uses only the Python standard library
 - Optional diagram renderer: Graphviz (`dot`) for SVG, PNG, and PDF export
+- AI was used to identify, fix, and optimize the problems found in the source code. It was also used as a tool to give this README document better form, formatting, and context.
 
 The core conversion and DOT diagram generation work on any platform with Python 3.10 or later. Graphviz is not required for the normal assignment output.
 
