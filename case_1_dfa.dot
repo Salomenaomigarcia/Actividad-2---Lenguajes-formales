@@ -1,0 +1,26 @@
+digraph DFA {
+  rankdir=LR;
+  node [shape=circle];
+  __start [shape=point];
+  D0 [label="D0 = {3, 5}", shape=circle];
+  D1 [label="D1 = {1, 2, 4, 5}", shape=doublecircle];
+  D2 [label="D2 = {4}", shape=doublecircle];
+  D3 [label="D3 = {1, 5}", shape=doublecircle];
+  D4 [label="D4 = {4, 5}", shape=doublecircle];
+  D5 [label="D5 = 0", shape=circle];
+  D6 [label="D6 = {5}", shape=circle];
+  __start -> D0;
+  D0 -> D1 [label="a"];
+  D0 -> D2 [label="b"];
+  D1 -> D3 [label="a"];
+  D1 -> D4 [label="b"];
+  D2 -> D5 [label="a"];
+  D2 -> D6 [label="b"];
+  D3 -> D2 [label="b"];
+  D3 -> D3 [label="a"];
+  D4 -> D3 [label="a"];
+  D4 -> D4 [label="b"];
+  D5 -> D5 [label="a, b"];
+  D6 -> D2 [label="b"];
+  D6 -> D3 [label="a"];
+}
